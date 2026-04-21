@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Manajemen Toko Buku</title>
+    <!-- Tailwind via CDN (opsional) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Tambahan untuk nuansa mobile */
+        body { background: #f3f4f6; font-family: 'Inter', sans-serif; }
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; }
+        .content { padding-bottom: 70px; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+<div class="max-w-md mx-auto bg-white min-h-screen shadow-lg relative">
+    <!-- Header -->
+    <div class="bg-blue-600 text-white p-4 pt-6 rounded-b-2xl">
+        <h1 class="text-xl font-bold">📚 Pustaka Jaya</h1>
+        <p class="text-blue-100 text-sm">Selamat pagi, Tini</p>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="content p-4 space-y-4">
+        <!-- Ringkasan Card -->
+        <div class="grid grid-cols-2 gap-3">
+            <div class="bg-white p-3 rounded-xl shadow-sm border">
+                <p class="text-gray-500 text-xs">Penjualan Hari Ini</p>
+                <p class="text-xl font-bold">Rp 2.450K</p>
+            </div>
+            <div class="bg-white p-3 rounded-xl shadow-sm border">
+                <p class="text-gray-500 text-xs">Komisi Pending</p>
+                <p class="text-xl font-bold text-orange-600">Rp 120K</p>
+            </div>
+        </div>
+
+        <!-- Info Penting -->
+        <div class="bg-amber-50 p-3 rounded-xl border border-amber-200">
+            <p class="font-semibold mb-2">📌 Info Penting</p>
+            <ul class="text-sm space-y-1">
+                <li>• 3 draft transaksi belum dibayar</li>
+                <li>• 5 buku stok menipis</li>
+                <li>• 2 judul dalam proses cetak</li>
+                <li>• Komisi Siti Reseller siap cair</li>
+            </ul>
+        </div>
+
+        <!-- Aksi Cepat -->
+        <div class="grid grid-cols-2 gap-3">
+            <button class="bg-blue-600 text-white py-3 rounded-xl font-medium shadow">➕ Transaksi Baru</button>
+            <button class="bg-gray-200 text-gray-800 py-3 rounded-xl font-medium">📦 Cek Stok</button>
+        </div>
+
+        <!-- Draft Terbaru (contoh multi transaksi sebelum bayar) -->
+        <div>
+            <div class="flex justify-between items-center mb-2">
+                <h2 class="font-semibold text-lg">Draft Transaksi</h2>
+                <a href="#" class="text-blue-600 text-sm">Lihat Semua</a>
+            </div>
+            <div class="space-y-2">
+                <!-- Draft Card 1 -->
+                <div class="bg-white p-3 rounded-xl border shadow-sm">
+                    <div class="flex justify-between">
+                        <span class="font-medium">Draft #1</span>
+                        <span class="text-xs text-gray-500">12 Mar 2025</span>
+                    </div>
+                    <p class="text-sm">Pelanggan: Budi (Umum)</p>
+                    <p class="text-sm">3 item • Total: <span class="font-semibold">Rp 185.000</span></p>
+                    <div class="flex gap-2 mt-2">
+                        <button class="flex-1 bg-gray-100 py-2 rounded-lg text-sm">✏️ Edit</button>
+                        <button class="flex-1 bg-green-600 text-white py-2 rounded-lg text-sm">💳 Bayar</button>
+                    </div>
+                </div>
+                <!-- Draft Card 2 -->
+                <div class="bg-white p-3 rounded-xl border shadow-sm">
+                    <div class="flex justify-between">
+                        <span class="font-medium">Draft #2</span>
+                        <span class="text-xs text-gray-500">11 Mar 2025</span>
+                    </div>
+                    <p class="text-sm">Pelanggan: Toko Abadi</p>
+                    <p class="text-sm">7 item • Total: <span class="font-semibold">Rp 920.500</span></p>
+                    <div class="flex gap-2 mt-2">
+                        <button class="flex-1 bg-gray-100 py-2 rounded-lg text-sm">✏️ Edit</button>
+                        <button class="flex-1 bg-green-600 text-white py-2 rounded-lg text-sm">💳 Bayar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav bg-white border-t flex justify-around py-2">
+        <div class="text-center text-blue-600">
+            <div>🏠</div>
+            <div class="text-xs font-medium">Beranda</div>
+        </div>
+        <div class="text-center text-gray-500">
+            <div>🧾</div>
+            <div class="text-xs">Transaksi</div>
+        </div>
+        <div class="text-center text-gray-500">
+            <div>📦</div>
+            <div class="text-xs">Stok</div>
+        </div>
+        <div class="text-center text-gray-500">
+            <div>👥</div>
+            <div class="text-xs">Pelanggan</div>
+        </div>
+        <div class="text-center text-gray-500">
+            <div>📊</div>
+            <div class="text-xs">Laporan</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
